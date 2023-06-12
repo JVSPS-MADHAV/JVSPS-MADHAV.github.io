@@ -133,7 +133,7 @@ header a:hover {
 }
 
 #boxes .box {
-    width: 30%;
+    flex-basis: 30%;
     padding: 10px;
     text-align: center;
 }
@@ -143,12 +143,12 @@ header a:hover {
 }
 
 aside#side-bar {
-    width: 30%;
+    flex-basis: 30%;
     margin-top: 10px;
 }
 
 article#main-col {
-    width: 65%;
+    flex-basis: 65%;
 }
 
 footer {
@@ -159,12 +159,9 @@ footer {
     text-align: center;
 }
 
-@media(max-width:768px){
-    header#branding header nav, header nav li{
-        float: none;
-        width:100%;
-        text-align: center;
-
-
+@media (max-width: 768px) {
+    header nav {
+        flex-basis: 100%;
+        justify-content: center;
     }
 }
